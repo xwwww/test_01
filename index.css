@@ -1,0 +1,97 @@
+html {
+    font-size: 10px
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.root {
+    width: 100%;
+    background-color: #ffffff;
+}
+  
+.navber {
+    width: 100%;
+    position: fixed;
+    height: 6.5rem;
+    top: 0;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem;
+}
+  
+.navbar__title {
+    font-size: 3.6rem;
+}
+
+.navbar__title_logo {
+    width: 15%;
+    display: block;
+}
+
+.navbar__block {
+    width: 75%;
+    list-style: none;
+    position: absolute;
+    display: flex;
+    right: 4rem;
+    top: 1rem;
+    justify-content: space-between;
+}
+
+.navbar__block_item {
+    font-size: 2rem;
+}
+
+.item-bottom {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+} 
+
+.container {
+    width: 100%;
+    margin: 0 auto; 
+    overflow: hidden;   
+}
+
+.container_photos {
+    width: 300%;
+    animation: switch 6s ease-out infinite normal;
+    -webkit-animation: switch 6s ease-out infinite normal;
+}
+
+.container-item {
+    width: 100%;
+    float: left;
+}
+
+@keyframes switch{
+	0%, 25% { /* 第1张图所用时长 */
+		margin-left: 0px; /* 第一张距离左侧的长度 */
+	}
+	30%, 60% {/* 第2张图所用时长 */
+		margin-left: -100%; /* 第一张距离左侧的长度 */
+	}
+	70%, 100% {/* 第3张图所用时长 */
+		margin-left: -200%; /* 第一张距离左侧的长度 */
+	}
+}
+
+@-webkit-keyframes switch{
+	0%, 25% { /* 第1张图所用时长 */
+		margin-left: 0px; /* 第一张距离左侧的长度 */
+	}
+	30%, 60% {/* 第2张图所用时长 */
+		margin-left: -100%; /* 第一张距离左侧的长度 */
+	}
+	70%, 100% {/* 第3张图所用时长 */
+		margin-left: -200%; /* 第一张距离左侧的长度 */
+	}
+}
+ 
+
