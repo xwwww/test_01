@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="styleSheet"  href="../index.css" />
+    <style type="text/css">
+        .contain {
+            width: 100%;
+        }
+        .brief {
+            width: 100%;
+        }
+        .tutors {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .tutor {
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+        }
+        .tutor:hover .info {
+            display: block;
+        }
+        .tutor img{
+            width: 80%;
+        }
+        .info {
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7);
+            font-size: 1.3rem;
+            text-align: center;
+            display: none;
+        }
+        .name {
+            margin: 0.4rem;
+        }
+        .desc {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="navber">
+            <div class="navbar__title">
+                <img class="navbar__title_logo" src="../images/LOGO.png">
+            </div>
+            <div class="navbar__block">
+                <a class="navbar__block_item" href="../index.html">
+                    <div class="item-top">首页</div>
+                    <div class="item-bottom">HOME</div>
+                </a>
+                <div class="navbar__block_item">
+                    <div class="item-top">作品集</div>
+                    <div class="item-bottom">PORTFOLIO</div>
+                    <div class="item_second">
+                        <a class="second-item" href="../Portfolio/training.html">
+                            <div class="item-top">作品集培训课程</div>
+                            <div class="item-bottom">Portfolio Training</div>
+                        </a>
+                        <a class="second-item" href="../Portfolio/samples.html">
+                            <div class="item-top">各专业作品集</div>
+                            <div class="item-bottom">Portfolio Samples</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../Majors/majors.html">先锋科系</a>
+                    <a class="item-bottom" href="../Majors/majors.html">MAJORS</a>
+                    <div class="item_second">
+                        <div class="second-item">
+                            <div class="item-top">建筑学科</div>
+                            <div class="item-bottom">Architecture</div>
+                        </div>
+                        <div class="second-item">
+                            <div class="item-top">动画实验室</div>
+                            <div class="item-bottom">Animation Laboratory</div>
+                        </div>
+                        <div class="second-item">
+                            <div class="item-top">游戏设计</div>
+                            <div class="item-bottom">Game Design</div>
+                        </div>
+                        <div class="second-item">
+                            <div class="item-top">平面设计</div>
+                            <div class="item-bottom">Graphic Design</div>
+                        </div>
+                        <div class="second-item">
+                            <div class="item-top">服装设计</div>
+                            <div class="item-bottom">Fashion Design</div>
+                        </div>
+                        <div class="second-item">
+                            <div class="item-top">工业设计</div>
+                            <div class="item-bottom">Industrial Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar__block_item">
+                    <div class="item-top">导师团队</div>
+                    <div class="item-bottom">TUTORS</div>
+                </div>
+                <div class="navbar__block_item">
+                    <div class="item-top">成功案例</div>
+                    <div class="item-bottom">OFFERS</div>
+                </div>
+                <div class="navbar__block_item">
+                    <div class="item-top">集训营</div>
+                    <div class="item-bottom">WORKSHOPS</div>
+                </div>
+                <div class="navbar__block_item">
+                    <div class="item-top">能量站</div>
+                    <div class="item-bottom">SHARINGS</div>
+                </div>
+                <div class="navbar__block_item">
+                    <div class="item-top">联络我们</div>
+                    <div class="item-bottom">CONTACT</div>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <img class="brief" src="../images/tutors/0.jpg">
+            <div class="tutors">
+                <div class="tutor">
+                    <img src="../images/tutors/1.jpg">
+                    <div class="info">
+                        <div class="name">Javier Ruiz</div>
+                        <div class="desc">伦敦大学学院</div>
+                        <div class="desc">建筑设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/2.jpg">
+                    <div class="info">
+                        <div class="name">Angela Li</div>
+                        <div class="desc">伦敦大学学院</div>
+                        <div class="desc">建筑设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/3.jpg">
+                    <div class="info">
+                        <div class="name">端木</div>
+                        <div class="desc">东京艺术大学</div>
+                        <div class="desc">动画专业</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/4.jpg">
+                    <div class="info">
+                        <div class="name">Hannah Zhu</div>
+                        <div class="desc">伦敦艺术大学</div>
+                        <div class="desc">影视戏剧</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/5.jpg">
+                    <div class="info">
+                        <div class="name">Tony Cui</div>
+                        <div class="desc">南加州大学</div>
+                        <div class="desc">游戏设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/6.jpg">
+                    <div class="info">
+                        <div class="name">Eric Mao</div>
+                        <div class="desc">伦敦大学学院</div>
+                        <div class="desc">建筑设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/7.jpg">
+                    <div class="info">
+                        <div class="name">Mia Qi</div>
+                        <div class="desc">伦敦大学学院</div>
+                        <div class="desc">景观设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/8.jpg">
+                    <div class="info">
+                        <div class="name">Frank Jiang</div>
+                        <div class="desc">AA建筑联盟学院</div>
+                        <div class="desc">建筑设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/9.jpg">
+                    <div class="info">
+                        <div class="name">Jessie Zhao</div>
+                        <div class="desc">伦敦大学学院</div>
+                        <div class="desc">城市设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/10.jpg">
+                    <div class="info">
+                        <div class="name">Nicole Meng</div>
+                        <div class="desc">伦敦艺术大学</div>
+                        <div class="desc">平面设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/11.jpg">
+                    <div class="info">
+                        <div class="name">Sonia Zhang</div>
+                        <div class="desc">先锋设计师</div>
+                        <div class="desc">品牌设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/12.jpg">
+                    <div class="info">
+                        <div class="name">Victor Wu</div>
+                        <div class="desc">哈佛大学</div>
+                        <div class="desc">建筑设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/13.jpg">
+                    <div class="info">
+                        <div class="name">Rachel Xin</div>
+                        <div class="desc">南加州大学</div>
+                        <div class="desc">动画专业</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/14.jpg">
+                    <div class="info">
+                        <div class="name">Xinhua Piao</div>
+                        <div class="desc">纽约音乐学院</div>
+                        <div class="desc">编曲专业</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/15.jpg">
+                    <div class="info">
+                        <div class="name">Yongfan Lu</div>
+                        <div class="desc">中央圣马丁艺术学院</div>
+                        <div class="desc">服装设计</div>
+                    </div>
+                </div>
+                <div class="tutor">
+                    <img src="../images/tutors/16.jpg">
+                    <div class="info">
+                        <div class="name">Ying Gao</div>
+                        <div class="desc">驻法国先锋设计师</div>
+                        <div class="desc">平面设计</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

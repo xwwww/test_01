@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link type="text/css" rel="styleSheet"  href="./index.css" />
+    <link type="text/css" rel="styleSheet"  href="../index.css" />
+    <style type="text/css">
+        .contain-majors {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10rem 8rem;
+            align-content: center;
+            justify-content: space-between;
+        }
+        .majors_item {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
 </head>
 <body>
     <div class="root">
         <div class="navber">
             <div class="navbar__title">
-                <img class="navbar__title_logo" src="./images/LOGO.png">
+                <img class="navbar__title_logo" src="../images/LOGO.png">
             </div>
             <div class="navbar__block">
-                <a class="navbar__block_item" href="index.html">
+                <a class="navbar__block_item" href="../index.html">
                     <div class="item-top">首页</div>
                     <div class="item-bottom">HOME</div>
                 </a>
@@ -22,49 +36,49 @@
                     <div class="item-top">作品集</div>
                     <div class="item-bottom">PORTFOLIO</div>
                     <div class="item_second">
-                        <a class="second-item" href="./Portfolio/training.html">
+                        <a class="second-item" href="./training.html">
                             <div class="item-top">作品集培训课程</div>
                             <div class="item-bottom">Portfolio Training</div>
                         </a>
-                        <a class="second-item" href="./Portfolio/samples.html">
+                        <a class="second-item" href="./samples.html">
                             <div class="item-top">各专业作品集</div>
                             <div class="item-bottom">Portfolio Samples</div>
                         </a>
                     </div>
                 </div>
                 <div class="navbar__block_item">
-                    <a class="item-top" href="./Majors/majors.html">先锋科系</a>
-                    <a class="item-bottom" href="./Majors/majors.html">MAJORS</a>
+                    <a class="item-top" href="../Majors/majors.html">先锋科系</a>
+                    <a class="item-bottom" href="../Majors/majors.html">MAJORS</a>
                     <div class="item_second">
-                        <a class="second-item">
+                        <div class="second-item">
                             <div class="item-top">建筑学科</div>
                             <div class="item-bottom">Architecture</div>
-                        </a>
-                        <a class="second-item">
+                        </div>
+                        <div class="second-item">
                             <div class="item-top">动画实验室</div>
                             <div class="item-bottom">Animation Laboratory</div>
-                        </a>
-                        <a class="second-item">
+                        </div>
+                        <div class="second-item">
                             <div class="item-top">游戏设计</div>
                             <div class="item-bottom">Game Design</div>
-                        </a>
-                        <a class="second-item">
+                        </div>
+                        <div class="second-item">
                             <div class="item-top">平面设计</div>
                             <div class="item-bottom">Graphic Design</div>
-                        </a>
-                        <a class="second-item">
+                        </div>
+                        <div class="second-item">
                             <div class="item-top">服装设计</div>
                             <div class="item-bottom">Fashion Design</div>
-                        </a>
-                        <a class="second-item">
+                        </div>
+                        <div class="second-item">
                             <div class="item-top">工业设计</div>
                             <div class="item-bottom">Industrial Design</div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="navbar__block_item">
-                    <a class="item-top" href="./Tutors/tutors.html">导师团队</a>
-                    <a class="item-bottom" href="./Tutors/tutors.html">TUTORS</a>
+                    <a class="item-top" href="../Tutors/tutors.html">导师团队</a>
+                    <a class="item-bottom" href="../Tutors/tutors.html">TUTORS</a>
                 </div>
                 <div class="navbar__block_item">
                     <div class="item-top">成功案例</div>
@@ -84,45 +98,38 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="container_photos">
-                <img class="container-item" src="./images/homepage_01.jpg">
-                <img class="container-item" src="./images/homepage_02.jpg">
-                <img class="container-item" src="./images/homepage_03.jpg">
-            </div>
-        </div>
-        <div class="majors">
-            <a class="majors_item" style="background-image: url(./images/jianzhu.jpeg)" href="./Portfolio/sample.html?id=1">
+        <div class="contain-majors">
+            <a class="majors_item" style="background-image: url(../images/jianzhu.jpeg)" href="./sample.html?id=1">
                 <div class="item_name">
                     <div class="item_name-top">建筑设计</div>
                     <div class="item_name-bottom">Architecture</div>
-                </div>
+                </div>>
             </a>
-            <a class="majors_item" style="background-image: url(./images/jingguan.jpeg)" href="./Portfolio/sample.html?id=2">
+            <a class="majors_item" style="background-image: url(../images/jingguan.jpeg)" href="./sample.html?id=2">
                 <div class="item_name">
                     <div class="item_name-top">景观设计</div>
                     <div class="item_name-bottom">Landscope Design</div>
                 </div>
             </a>
-            <a class="majors_item" style="background-image: url(./images/chahua.jpeg)" href="./Portfolio/sample.html?id=3">
+            <a class="majors_item" style="background-image: url(../images/chahua.jpeg)" href="./sample.html?id=3">
                 <div class="item_name">
                     <div class="item_name-top">插画设计</div>
                     <div class="item_name-bottom">Illustration Design</div>
                 </div>
             </a>
-            <a class="majors_item" style="background-image: url(./images/fuzhuang.jpeg)" href="./Portfolio/sample.html?id=4">
+            <a class="majors_item" style="background-image: url(../images/fuzhuang.jpeg)" href="./sample.html?id=4">
                 <div class="item_name">
                     <div class="item_name-top">服装设计</div>
                     <div class="item_name-bottom">Fashion Design</div>
                 </div>
             </a>
-            <a class="majors_item" style="background-image: url(./images/qiche.jpeg)" href="./Portfolio/sample.html?id=5">
+            <a class="majors_item" style="background-image: url(../images/qiche.jpeg)" href="./sample.html?id=5">
                 <div class="item_name">
                     <div class="item_name-top">汽车设计</div>
                     <div class="item_name-bottom">Automotive design</div>
                 </div>
             </a>
-            <a class="majors_item" style="background-image: url(./images/donghua.jpeg)" href="./Portfolio/sample.html?id=6">
+            <a class="majors_item" style="background-image: url(../images/donghua.jpeg)" href="./sample.html?id=6">
                 <div class="item_name">
                     <div class="item_name-top">动画设计</div>
                     <div class="item_name-bottom">Animation Design</div>

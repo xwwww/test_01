@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link type="text/css" rel="styleSheet"  href="./index.css" />
+    <link type="text/css" rel="styleSheet"  href="../index.css" />
     <style type="text/css">
         .contain-majors {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 10rem 8rem;
-            align-content: center;
-            justify-content: space-between;
+           width: 100%;
+        }
+        .major {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+        }
+        .major img {
+            width: 100%;
         }
     </style>
 </head>
@@ -20,10 +24,10 @@
     <div class="root">
         <div class="navber">
             <div class="navbar__title">
-                <img class="navbar__title_logo" src="./images/LOGO.png">
+                <img class="navbar__title_logo" src="../images/LOGO.png">
             </div>
             <div class="navbar__block">
-                <a class="navbar__block_item" href="index.html">
+                <a class="navbar__block_item" href="../index.html">
                     <div class="item-top">首页</div>
                     <div class="item-bottom">HOME</div>
                 </a>
@@ -31,11 +35,11 @@
                     <div class="item-top">作品集</div>
                     <div class="item-bottom">PORTFOLIO</div>
                     <div class="item_second">
-                        <a class="second-item" href="./training.html">
+                        <a class="second-item" href="../Portfolio/training.html">
                             <div class="item-top">作品集培训课程</div>
                             <div class="item-bottom">Portfolio Training</div>
                         </a>
-                        <a class="second-item" href="./samples.html">
+                        <a class="second-item" href="../Portfolio/samples.html">
                             <div class="item-top">各专业作品集</div>
                             <div class="item-bottom">Portfolio Samples</div>
                         </a>
@@ -51,29 +55,29 @@
                         </div>
                         <div class="second-item">
                             <div class="item-top">动画实验室</div>
-                            <div class="item-bottom">Portfolio Samples</div>
+                            <div class="item-bottom">Animation Laboratory</div>
                         </div>
                         <div class="second-item">
                             <div class="item-top">游戏设计</div>
-                            <div class="item-bottom">Portfolio Samples</div>
+                            <div class="item-bottom">Game Design</div>
                         </div>
                         <div class="second-item">
                             <div class="item-top">平面设计</div>
-                            <div class="item-bottom">Portfolio Samples</div>
+                            <div class="item-bottom">Graphic Design</div>
                         </div>
                         <div class="second-item">
                             <div class="item-top">服装设计</div>
-                            <div class="item-bottom">Portfolio Samples</div>
+                            <div class="item-bottom">Fashion Design</div>
                         </div>
                         <div class="second-item">
                             <div class="item-top">工业设计</div>
-                            <div class="item-bottom">Portfolio Samples</div>
+                            <div class="item-bottom">Industrial Design</div>
                         </div>
                     </div>
                 </div>
                 <div class="navbar__block_item">
-                    <div class="item-top">导师团队</div>
-                    <div class="item-bottom">TUTORS</div>
+                    <a class="item-top" href="../Tutors/tutors.html">导师团队</a>
+                    <a class="item-bottom" href="../Tutors/tutors.html">TUTORS</a>
                 </div>
                 <div class="navbar__block_item">
                     <div class="item-top">成功案例</div>
@@ -94,42 +98,27 @@
             </div>
         </div>
         <div class="contain-majors">
-            <div class="majors_item" style="background-image: url(./images/jianzhu.jpeg)">
-                <div class="item_name">
-                    <div class="item_name-top">建筑设计</div>
-                    <div class="item_name-bottom">Architecture</div>
-                </div>
-            </div>
-            <div class="majors_item" style="background-image: url(./images/jingguan.jpeg)">
-                <div class="item_name">
-                    <div class="item_name-top">景观设计</div>
-                    <div class="item_name-bottom">Landscope Design</div>
-                </div>
-            </div>
-            <div class="majors_item" style="background-image: url(./images/chahua.jpeg)">
-                <div class="item_name">
-                    <div class="item_name-top">插画设计</div>
-                    <div class="item_name-bottom">Landscope Design</div>
-                </div>
-            </div>
-            <div class="majors_item" style="background-image: url(./images/fuzhuang.jpeg)">
-                <div class="item_name">
-                    <div class="item_name-top">服装设计</div>
-                    <div class="item_name-bottom">Landscope Design</div>
-                </div>
-            </div>
-            <div class="majors_item" style="background-image: url(./images/qiche.jpeg)">
-                <div class="item_name">
-                    <div class="item_name-top">汽车设计</div>
-                    <div class="item_name-bottom">Landscope Design</div>
-                </div>
-            </div>
-            <div class="majors_item" style="background-image: url(./images/donghua.jpeg)">
-                <div class="item_name">
-                    <div class="item_name-top">动画设计</div>
-                    <div class="item_name-bottom">Landscope Design</div>
-                </div>
-            </div>
+            <a class="major" href="./major.html?id=1">
+                <img src="../images/majors/2-1.jpg">
+            </a>
+            <a class="major" href="./major.html?id=2">
+                <img src="../images/majors/2-2.jpg">
+            </a>
+            <a class="major" href="./major.html?id=3">
+                <img src="../images/majors/2-3.jpg">
+            </a>
+            <a class="major" href="./major.html?id=4">
+                <img src="../images/majors/2-4.jpg">
+            </a>
+            <a class="major" href="./major.html?id=5">
+                <img src="../images/majors/2-5.jpg">
+            </a>
+            <a class="major" href="./major.html?id=6">
+                <img src="../images/majors/2-6.jpg">
+            </a>
+            <a class="major" href="./major.html?id=7">
+                <img src="../images/majors/2-7.jpg">
+            </a>
         </div>
     </div>
 </body>
