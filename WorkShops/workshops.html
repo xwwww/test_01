@@ -8,14 +8,18 @@
     <link type="text/css" rel="styleSheet"  href="../index.css" />
     <style type="text/css">
         .contain-majors {
-            width: 100%;
+           width: 100%;
         }
-        .item {
+        .major {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            cursor: pointer;
+        }
+        .major img {
             width: 100%;
-            margin-bottom: 2rem;
         }
     </style>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="root">
@@ -32,11 +36,11 @@
                     <div class="item-top">作品集</div>
                     <div class="item-bottom">PORTFOLIO</div>
                     <div class="item_second">
-                        <a class="second-item" href="./training.html">
+                        <a class="second-item" href="../Portfolio/training.html">
                             <div class="item-top">作品集培训课程</div>
                             <div class="item-bottom">Portfolio Training</div>
                         </a>
-                        <a class="second-item" href="./samples.html">
+                        <a class="second-item" href="../Portfolio/samples.html">
                             <div class="item-top">各专业作品集</div>
                             <div class="item-bottom">Portfolio Samples</div>
                         </a>
@@ -94,80 +98,14 @@
                 </div>
             </div>
         </div>
-        <div class="contain-majors"></div>
+        <div class="contain-majors">
+            <a class="major" href="./workshop1.html">
+                <img src="../images/workshops/base.jpg">
+            </a>
+            <a class="major" href="./workshop2.html">
+                <img src="../images/workshops/params.jpg">
+            </a>
+        </div>
     </div>
-    <script>
-        window.onload = function(){
-            var list = getParams(location.href)
-            for (var i = 0; i < list.length; i++) {
-                $(".contain-majors").append("<img>")
-            }
-
-            $(".contain-majors img").each(function(i){
-                $(this).attr("src", list[i]); 
-                $(this).addClass('item')
-            });
-        }
-
-        function getParams(url) {
-            var t = url.split('=')[1]
-            var images = []
-            switch(t) {
-                case '1':
-                    images = [
-                        '../images/jianzhu/1-0.jpg',
-                        '../images/jianzhu/1-1.jpg',
-                        '../images/jianzhu/1-2.jpg',
-                        '../images/jianzhu/1-3.jpg',
-                        '../images/jianzhu/1-4.jpg'
-                    ]
-                    break;
-                case '2':
-                    images = [
-                        '../images/jingguan/1-0.jpg',
-                        '../images/jingguan/1-1.jpg',
-                        '../images/jingguan/1-2.jpg'
-                    ]
-                    break;
-                case '3':
-                    images = [
-                        '../images/chahua/1-0.jpg',
-                        '../images/chahua/1-1.jpg',
-                        '../images/chahua/1-2.jpg',
-                        '../images/chahua/1-3.jpg',
-                        '../images/chahua/1-4.jpg'
-                    ]
-                    break;
-                case '4':
-                    images = [
-                        '../images/fuzhuang/1-0.jpg',
-                        '../images/fuzhuang/1-1.jpg',
-                        '../images/fuzhuang/1-2.jpg',
-                        '../images/fuzhuang/1-3.jpg',
-                        '../images/fuzhuang/1-4.jpg'
-                    ]
-                    break;
-                case '5':
-                    images = [
-                        '../images/qiche/1-0.jpg',
-                        '.,/images/qiche/1-1.jpg',
-                        '.,/images/qiche/1-2.jpg',
-                        '../images/qiche/1-3.jpg',
-                        '../images/qiche/1-4.jpg'
-                    ]
-                    break;
-                case '6':
-                    images = [
-                        '../images/donghua/1-0.jpg',
-                        '../images/donghua/1-1.jpg',
-                        '../images/donghua/1-2.jpg',
-                        '../images/donghua/1-3.jpg'
-                    ]
-                    break;
-            }
-
-            return images;
-        }
-    </script>
 </body>
 </html>
