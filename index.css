@@ -33,7 +33,7 @@ body {
 }
 
 .navbar__block {
-    width: 78%;
+    width: 70%;
     height: 6.5rem;
     list-style: none;
     position: absolute;
@@ -45,7 +45,7 @@ body {
 
 .navbar__block_item {
     height: 6.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
     cursor: pointer;
     position: relative;
