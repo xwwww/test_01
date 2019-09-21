@@ -14,11 +14,6 @@
             align-content: center;
             justify-content: space-between;
         }
-        .majors_item {
-            display: block;
-            text-decoration: none;
-            color: #000000;
-        }
     </style>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -109,9 +104,8 @@
             }
 
             $(".contain-majors img").each(function(i){
-                console.log(list[i],i)
                 $(this).attr("src", list[i]); 
-                $(this).addClass('item')
+                $(this).css({"width":"30%"})
                 $(this).click(function() {
                     location.href = 'detail.html?id=' + getParams(location.href)
                 })
