@@ -30,6 +30,8 @@ body {
 .navbar__title_logo {
     width: 15%;
     display: block;
+    position: absolute;
+    top: 1rem;
 }
 
 .navbar__block {
