@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="styleSheet"  href="../index.css" />
+    <style type="text/css">
+        .contain-majors {
+            width: 100%;
+            margin-top: 10rem
+        }
+        .contain {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 10rem 8rem;
+          align-content: center;
+          justify-content: space-between;
+        }
+        .item {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="root">
+        <div class="navber">
+            <div class="navbar__title">
+                <img class="navbar__title_logo" src="../images/LOGO.png">
+            </div>
+            <div class="navbar__block">
+                <a class="navbar__block_item" href="../index.html">
+                    <div class="item-top">首页</div>
+                    <div class="item-bottom">HOME</div>
+                </a>
+                <div class="navbar__block_item">
+                    <div class="item-top">作品集</div>
+                    <div class="item-bottom">PORTFOLIO</div>
+                    <div class="item_second">
+                        <a class="second-item" href="./training.html">
+                            <div class="item-top">作品集培训课程</div>
+                            <div class="item-bottom">Portfolio Training</div>
+                        </a>
+                        <a class="second-item" href="./samples.html">
+                            <div class="item-top">各专业作品集</div>
+                            <div class="item-bottom">Portfolio Samples</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../Majors/majors.html">先锋科系</a>
+                    <a class="item-bottom" href="../Majors/majors.html">MAJORS</a>
+                    <div class="item_second">
+                      <a class="second-item" href="./major.html?id=1">
+                        <div class="item-top">建筑学科</div>
+                        <div class="item-bottom">Architecture</div>
+                      </a>
+                      <a class="second-item" href="./major.html?id=2">
+                          <div class="item-top">动画实验室</div>
+                          <div class="item-bottom">Animation Laboratory</div>
+                      </a>
+                      <a class="second-item" href="./major.html?id=3">
+                          <div class="item-top">游戏设计</div>
+                          <div class="item-bottom">Game Design</div>
+                      </a>
+                      <a class="second-item" href="./major.html?id=4">
+                          <div class="item-top">平面设计</div>
+                          <div class="item-bottom">Graphic Design</div>
+                      </a>
+                      <a class="second-item" href="./major.html?id=5">
+                          <div class="item-top">服装设计</div>
+                          <div class="item-bottom">Fashion Design</div>
+                      </a>
+                      <a class="second-item" href="./major.html?id=7">
+                          <div class="item-top">工业设计</div>
+                          <div class="item-bottom">Industrial Design</div>
+                      </a>
+                    </div>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../Tutors/tutors.html">导师团队</a>
+                    <a class="item-bottom" href="../Tutors/tutors.html">TUTORS</a>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../Portfolio/samples.html">成功案例</a>
+                    <a class="item-bottom" href="../Portfolio/samples.html">OFFERS</a>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../WorkShops/workshops.html">集训营</a>
+                    <a class="item-bottom" href="../WorkShops/workshops.html">WORKSHOPS</a>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../PowerStation/station.html">能量站</a>
+                    <a class="item-bottom" href="../PowerStation/station.html">SHARINGS</a>
+                </div>
+                <div class="navbar__block_item">
+                    <a class="item-top" href="../Contact/contact.html">联络我们</a>
+                    <a class="item-bottom" href="../Contact/contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="contain-majors"></div>
+        <div class="contain">
+          <a class="majors_item" style="background-image: url(../images/jianzhu.jpeg)" href="../Portfolio/sample.html?id=1">
+          </a>
+          <a class="majors_item" style="background-image: url(../images/jingguan.jpeg)" href="../Portfolio/sample.html?id=2">
+          </a>
+          <a class="majors_item" style="background-image: url(../images/chahua.jpeg)" href="../PowerStation/station1.html">
+          </a>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+            var list = getParams(location.href)
+            
+            $(".contain-majors").append("<img>")
+
+            $(".contain-majors img").each(function(i){
+                $(this).attr("src", list); 
+                $(this).addClass('item')
+            });
+        }
+
+        function getParams(url) {
+            var t = url.split('=')[1]
+            var images = []
+            switch(t) {
+                case '1':
+                    images = '../images/majors/2-1.jpg'
+                    break;
+                case '2':
+                    images = '../images/majors/2-2.jpg'
+                    break;
+                case '3':
+                    images = '../images/majors/2-3.jpg';
+                case '4':
+                    images = '../images/majors/2-4.jpg'
+                    break;
+                case '5':
+                    images = '../images/majors/2-5.jpg' 
+                    break;
+                case '6':
+                    images = '../images/majors/2-6.jpg'
+                    break;
+                case '7':
+                    images = '../images/majors/2-7.jpg'
+                    break;
+            }
+
+            return images;
+        }
+    </script>
+</body>
+</html>

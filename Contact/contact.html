@@ -7,19 +7,25 @@
     <title>Document</title>
     <link type="text/css" rel="styleSheet"  href="../index.css" />
     <style type="text/css">
-        .contain-majors {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 10rem 8rem;
-            align-content: center;
-            justify-content: space-between;
+        .container {
+          width: 100%;
+          margin: 10rem auto;
         }
-        .majors_item {
-            display: block;
-            text-decoration: none;
-            color: #000000;
+        .contain {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+        }
+        .logo {
+          width: 5rem;
+        }
+        .name {
+          width: 16rem;
+          margin-bottom: 2rem;
         }
     </style>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="root">
@@ -36,11 +42,11 @@
                     <div class="item-top">作品集</div>
                     <div class="item-bottom">PORTFOLIO</div>
                     <div class="item_second">
-                        <a class="second-item" href="../Portfolio/training.html">
+                        <a class="second-item" href="./training.html">
                             <div class="item-top">作品集培训课程</div>
                             <div class="item-bottom">Portfolio Training</div>
                         </a>
-                        <a class="second-item" href="../Portfolio/samples.html">
+                        <a class="second-item" href="./samples.html">
                             <div class="item-top">各专业作品集</div>
                             <div class="item-bottom">Portfolio Samples</div>
                         </a>
@@ -50,27 +56,27 @@
                     <a class="item-top" href="../Majors/majors.html">先锋科系</a>
                     <a class="item-bottom" href="../Majors/majors.html">MAJORS</a>
                     <div class="item_second">
-                      <a class="second-item" href="../Majors/major.html?id=1">
+                      <a class="second-item" href="./major.html?id=1">
                         <div class="item-top">建筑学科</div>
                         <div class="item-bottom">Architecture</div>
                       </a>
-                      <a class="second-item" href="../Majors/major.html?id=2">
+                      <a class="second-item" href="./major.html?id=2">
                           <div class="item-top">动画实验室</div>
                           <div class="item-bottom">Animation Laboratory</div>
                       </a>
-                      <a class="second-item" href="../Majors/major.html?id=3">
+                      <a class="second-item" href="./major.html?id=3">
                           <div class="item-top">游戏设计</div>
                           <div class="item-bottom">Game Design</div>
                       </a>
-                      <a class="second-item" href="../Majors/major.html?id=4">
+                      <a class="second-item" href="./major.html?id=4">
                           <div class="item-top">平面设计</div>
                           <div class="item-bottom">Graphic Design</div>
                       </a>
-                      <a class="second-item" href="../Majors/major.html?id=5">
+                      <a class="second-item" href="./major.html?id=5">
                           <div class="item-top">服装设计</div>
                           <div class="item-bottom">Fashion Design</div>
                       </a>
-                      <a class="second-item" href="../Majors/major.html?id=7">
+                      <a class="second-item" href="./major.html?id=7">
                           <div class="item-top">工业设计</div>
                           <div class="item-bottom">Industrial Design</div>
                       </a>
@@ -98,19 +104,18 @@
                 </div>
             </div>
         </div>
-        <div class="contain-majors">
-            <a class="majors_item" style="background-image: url(../images/station/1.jpg)" href="./station1.html">
-            </a>
-            <a class="majors_item" style="background-image: url(../images/station/2.jpg)" href="./station2.html">
-            </a>
-            <a class="majors_item" style="background-image: url(../images/station/3.jpg)" href="./station3.html">
-            </a>
-            <a class="majors_item" style="background-image: url(../images/station/4.jpg)" href="./station4.html">
-            </a>
-            <a class="majors_item" style="background-image: url(../images/station/5.jpg)" href="../WorkShops/workshop2.html">
-            </a>
-            <a class="majors_item" style="background-image: url(../images/station/6.jpg)" href="../WorkShops/workshop1.html">
-            </a>
+        <div class="container">
+          <div class="contain">
+            <img class="logo" src="../images/contact/weibo.png">
+            <img class="name" src="../images/contact/weibo1.png">
+          </div>
+          <div class="contain">
+            <img class="logo" src="../images/contact/weixin.png">
+            <img class="name" src="../images/contact/weibo2.png">
+          </div>
+          <div class="contain">
+            <img src="../images/contact/code.jpeg">
+          </div>
         </div>
     </div>
 </body>
