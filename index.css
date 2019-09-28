@@ -1,7 +1,30 @@
 html {
     font-size: 10px
 }
-    @media screen and (min-width:1600px){html{font-size:14px}
+
+@media screen and (min-width:1200px) and (max-width: 1440px) {
+    html {
+        font-size: 9px
+    }
+}
+
+@media screen and (min-width:900px) and (max-width: 1200px) {
+    html {
+        font-size: 8px
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 900px) {
+    html {
+        font-size: 7px
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 6px
+    }
 }
 
 body {
@@ -30,7 +53,7 @@ body {
 }
   
 .navbar__title_logo {
-    width: 15%;
+    width: 12%;
     display: block;
     position: absolute;
     top: 1rem;
@@ -42,14 +65,14 @@ body {
     list-style: none;
     position: absolute;
     display: flex;
-    right: 3rem;
+    left: 39rem;
     top: 0;
     justify-content: space-between;
 }
 
 .navbar__block_item {
     height: 6.5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 1rem 0;
     cursor: pointer;
     position: relative;
@@ -77,13 +100,13 @@ body {
 }
 
 .item_second {
-    min-width: 15rem;
+    min-width: 18rem;
     display: none;
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 6.5rem;
     left: -1rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .second-item {
@@ -144,19 +167,19 @@ body {
 .majors {
     display: flex;
     flex-wrap: wrap;
-    margin: 5rem 5%;
+    margin: 5rem 10%;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .majors_item {
-    width: 30%;
+    width: 28%;
     display: inline-block;
-    padding-bottom: 30%;
+    padding-bottom: 28%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin-bottom: 2rem;
+    margin-bottom: 5%;
     position: relative;
     text-decoration: none;
     color: #000000;

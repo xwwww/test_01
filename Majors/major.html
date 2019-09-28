@@ -12,11 +12,24 @@
             margin-top: 10rem
         }
         .contain {
+          width: 80%;
           display: flex;
           flex-wrap: wrap;
-          margin: 10rem 8rem;
+          margin: 10rem auto;
           align-content: center;
-          justify-content: space-between;
+          justify-content: space-evenly;
+        }
+        .margor-item {
+            width: 28%;
+            display: inline-block;
+            padding-bottom: 28%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-bottom: 5%;
+            position: relative;
+            text-decoration: none;
+            color: #000000;
         }
         .item {
             width: 100%;
@@ -44,7 +57,7 @@
                             <div class="item-top">作品集培训课程</div>
                             <div class="item-bottom">Portfolio Training</div>
                         </a>
-                        <a class="second-item" href="../Portfolio/training.html">
+                        <a class="second-item" href="../Portfolio/samples.html">
                             <div class="item-top">各专业作品集</div>
                             <div class="item-bottom">Portfolio Samples</div>
                         </a>
@@ -74,9 +87,13 @@
                           <div class="item-top">服装设计</div>
                           <div class="item-bottom">Fashion Design</div>
                       </a>
-                      <a class="second-item" href="../Majors/major.html?id=7">
+                      <a class="second-item" href="../Majors/major.html?id=6">
                           <div class="item-top">工业设计</div>
                           <div class="item-bottom">Industrial Design</div>
+                      </a>
+                      <a class="second-item" href="./major.html?id=7">
+                        <div class="item-top">交互设计</div>
+                        <div class="item-bottom">Interactive Design</div>
                       </a>
                     </div>
                 </div>
@@ -85,12 +102,22 @@
                     <a class="item-bottom" href="../Tutors/tutors.html">TUTORS</a>
                 </div>
                 <div class="navbar__block_item">
-                    <a class="item-top" href="../Portfolio/samples.html">成功案例</a>
-                    <a class="item-bottom" href="../Portfolio/samples.html">OFFERS</a>
+                    <a class="item-top" href="../Offers/offers.html">成功案例</a>
+                    <a class="item-bottom" href="../Offers/offers.html">OFFERS</a>
                 </div>
                 <div class="navbar__block_item">
                     <a class="item-top" href="../WorkShops/workshops.html">集训营</a>
                     <a class="item-bottom" href="../WorkShops/workshops.html">WORKSHOPS</a>
+                    <div class="item_second">
+                        <a class="second-item" href="../WorkShops/workshop2.html">
+                            <div class="item-top">参数化设计集训营</div>
+                            <div class="item-bottom">Paramatric Design Workshop</div>
+                        </a>
+                        <a class="second-item" href="../WorkShops/workshop1.html">
+                            <div class="item-top">基础软件训练营</div>
+                            <div class="item-bottom">Software Workshop</div>
+                        </a>
+                    </div>
                 </div>
                 <div class="navbar__block_item">
                     <a class="item-top" href="../PowerStation/station.html">能量站</a>
@@ -104,24 +131,31 @@
         </div>
         <div class="contain-majors"></div>
         <div class="contain">
-          <a class="majors_item" style="background-image: url(../images/jianzhu.jpeg)" href="../Portfolio/sample.html?id=1">
-          </a>
-          <a class="majors_item" style="background-image: url(../images/jingguan.jpeg)" href="../Portfolio/sample.html?id=2">
-          </a>
-          <a class="majors_item" style="background-image: url(../images/chahua.jpeg)" href="../PowerStation/station1.html">
-          </a>
         </div>
     </div>
     <script>
         window.onload = function(){
-            var list = getParams(location.href)
+            var images = getParams(location.href)
             
             $(".contain-majors").append("<img>")
 
             $(".contain-majors img").each(function(i){
-                $(this).attr("src", list); 
+                $(this).attr("src", images); 
                 $(this).addClass('item')
             });
+            
+            var list = getImageList(location.href)
+            var urls = getUrlList(location.href)
+            for (var i=0;i < list.length; i++) {
+                $('.contain').append('<a>')
+            }
+            $(".contain a").each(function(i){
+                console.log(i, urls[i])
+                $(this).addClass('majors_item')
+                $(this).attr("href", urls[i]); 
+                $(this).css('background-image','url('+ list[i] +')')
+            });
+            
         }
 
         function getParams(url) {
@@ -151,6 +185,93 @@
             }
 
             return images;
+        }
+
+        function getImageList(url) {
+            var t = url.split('=')[1]
+            var list = []
+            switch(t) {
+                case '1':
+                    list = [
+                        '../images/majors/2-1.jpg',
+                        '../images/majors/2-2.jpg'
+                    ]
+                    break;
+                case '2':
+                    list = [
+                        '../images/majors/2-1.jpg'
+                    ]
+                    break;
+                case '3':
+                    list = [
+                        '../images/majors/2-1.jpg'
+                    ]
+                case '4':
+                    list = [
+                        '../images/majors/2-1.jpg'
+                    ]
+                    break;
+                case '5':
+                    list = [
+                        '../images/majors/2-1.jpg'
+                    ]
+                    break;
+                case '6':
+                    list = [
+                        '../images/majors/2-1.jpg'
+                    ]
+                    break;
+                case '7':
+                    list = [
+                        '../images/jiaohu1/1-0.jpg'
+                    ]
+                    break;
+            }
+
+            return list;
+        }
+        function getUrlList(url) {
+            var t = url.split('=')[1]
+            var urls = []
+            switch(t) {
+                case '1':
+                    urls = [
+                        '../Portfolio/detail.html?id=1',
+                        '../Portfolio/detail.html?id=2'
+                    ]
+                    break;
+                case '2':
+                    urls = [
+                        '../Portfolio/detail.html?=2'
+                    ]
+                    break;
+                case '3':
+                    urls = [
+                        '../Portfolio/detail.html?=3'
+                    ]
+                case '4':
+                    urls = [
+                        '../Portfolio/detail.html?=4'
+                    ]
+                    break;
+                case '5':
+                    urls = [
+                        '../Portfolio/detail.html?=5'
+                    ]
+                    break;
+                case '6':
+                    urls = [
+                        '../Portfolio/detail.html?=6'
+                    ]
+                    break;
+                case '7':
+                    urls = [
+                        '../Portfolio/detail.html?id=7'
+                    ]
+                    break;
+            }
+
+            return urls;
         }
     </script>
 </body>
