@@ -10,9 +10,9 @@
         .contain-majors {
             display: flex;
             flex-wrap: wrap;
-            margin: 10rem 8rem;
+            margin: 10rem 10%;
             align-content: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
     </style>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -108,21 +108,27 @@
                 </div>
             </div>
         </div>
-        <div class="contain-majors"></div>
+        <div class="majors contain-majors"></div>
     </div>
     <script>
         window.onload = function(){
             var list = getParamsImg(location.href)
             for (var i = 0; i < list.length; i++) {
-                $(".contain-majors").append("<img>")
+                // $(".contain-majors").append("<img>")
+                $(".majors").append("<a>")
             }
 
-            $(".contain-majors img").each(function(i){
-                $(this).attr("src", list[i]); 
-                $(this).css({"width":"30%"})
-                $(this).click(function() {
-                    location.href = 'detail.html?id=' + getParams(location.href)
-                })
+            $(".majors a").each(function(i){
+                console.log(i, list[i])
+                var majors = ['建筑设计', '景观设计', '插画设计', '服装设计', '汽车设计', '动画设计', '交互设计'];
+                $(this).attr('href', 'detail.html?id=' + getParams(location.href))
+                $(this).addClass('majors_item')
+                // $(this).attr("src", list[i]); 
+                $(this).css('background-image','url('+ list[i] +')')
+                $(this).append('<div class="item_name"><div class="item_name-top">'+ majors[getParams(location.href)-1] +' Student Work1' + '</div><div class="item_name-bottom">Animation Design</div></div>')
+                // $(this).click(function() {
+                //     location.href = 'detail.html?id=' + getParams(location.href)
+                // })
             });
         }
 
